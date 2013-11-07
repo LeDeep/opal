@@ -158,7 +158,7 @@ class Time
   end
 
   def day
-    `self.getDate()`
+    `self.getUTCDate()`
   end
 
   def yday
@@ -182,7 +182,7 @@ class Time
   end
 
   def hour
-    `self.getHours()`
+    `self.getUTCHours()`
   end
 
   def inspect
@@ -192,11 +192,11 @@ class Time
   alias mday day
 
   def min
-    `self.getMinutes()`
+    `self.getUTCMinutes()`
   end
 
   def mon
-    `self.getMonth() + 1`
+    `self.getUTCMonth() + 1`
   end
 
   def monday?
